@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;1,500&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1120px) {
+    body {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    body {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+    }
+    
+    .separator {
+        display: none !important;
+    }
+
+    .logo img {
+        width: 165px !important;
+        height: 165px !important;
+    }
+
+    body {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__row {
+        max-width: 400px !important;
+        min-width: 350px !important;
+    }
+
+    .logo img {
+        width: 125px !important;
+        height: 125px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container__row {
+        max-width: 360px !important;
+        min-width: 200px !important;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+    gap: 32px;
+}
+
+.separator {
+    display: block;
+    border: 1px solid #393939;
+    color: #393939;
+    min-height: 600px;
+    height: fit-content;
+}
+
+.container__row {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 450px;
+    gap: 16px;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    width: 205px;
+    height: 205px;
+}
+
+.nickname {
+    font-size: 1.5em;
+    font-weight: 800;
+    background: linear-gradient(93.18deg, rgba(62, 6, 95, 0.6) 15.5%, rgba(255, 255, 255, 0.6) 87.77%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name {
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.skill {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #B6B6B6;
+    text-align: center;
+}
+
+.info {
+    margin: 16px 24px;
+    color: #EBEBEB;
+}
+
+.info .link {
+    color: #EBEBEB;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.links-header {
+    font-size: 1.125em;
+    color: #fff;
+    font-weight: 800;
+}
+
+.links .link {
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(166, 166, 166, 0.1), 0px 0px 4px rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 20px 24px;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 45px;
+}
